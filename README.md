@@ -4,7 +4,7 @@
 ## You can reach the project description video by clicking on the image below.
 
 
-[![IMAGE ALT TEXT]([https://i.hizliresim.com/22btq6v.jpg](https://youtu.be/IIznXYwROUg)
+[![IMAGE ALT TEXT]([https://i.hizliresim.com/22btq6v.jpg](https://youtu.be/IIznXYwROUg "Angular 13 e-commerce")
 
 
 ## Installation
