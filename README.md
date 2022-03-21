@@ -1,3 +1,8 @@
+## You can reach the project description video by clicking on the image below.
+[![Watch the video](https://www.hizliresim.com/qzw97ds)](https://www.youtube.com/watch?v=IIznXYwROUg&ab_channel=EmreDemirkaz%C4%B1k)
+
+
+
 # 4. Hafta Ödevi
 
 ## You can reach the project description video by clicking on the image below.
