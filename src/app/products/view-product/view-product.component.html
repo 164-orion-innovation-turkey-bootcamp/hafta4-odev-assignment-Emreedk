@@ -1,0 +1,66 @@
+<div class="card mt-4 mb-4" *ngIf="productData">
+  <div class="row">
+    <div class="col-6">
+      <img
+        class="card-img-top img-fluid product-img"
+        src="/../../assets/img/{{ productData?.productImg }}"
+        alt=""
+        width="900"
+        height="200"
+      />
+    </div>
+
+    <div class="card-body col-6">
+      <h3 class="card-title">{{ productData?.name }}</h3>
+      <a
+        *ngIf="isAdmin"
+        class="btn btn-warning"
+        [routerLink]="['/products/update-product/', productID]"
+        >Update Product</a
+      >
+      &nbsp;
+      <button
+        *ngIf="isAdmin"
+        (click)="deleteProduct(productData?.id)"
+        class="btn btn-danger"
+      >
+        Delete Product
+      </button>
+      <h4>$ {{ productData?.price }}</h4>
+      <p>{{ productData?.description }}</p>
+      <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+      <br />
+      <br />
+      <br />
+      <button class="btn btn-info" (click)="addtoCart(productID)">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="card card-outline-secondary my-4">
+  <div class="card-header">Product Review</div>
+  <div class="card-body">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, atque?
+      Libero, a commodi. Dicta, odit error ratione ex praesentium, ipsam
+      incidunt numquam aliquid est voluptatem iusto doloribus voluptatibus
+      repellendus quibusdam.
+    </p>
+    <small class="text-muted">Posted By Anonymous on 15.03.2022</small>
+  </div>
+  <div class="card-body">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, atque?
+      Libero, a commodi. Dicta, odit error ratione ex praesentium, ipsam
+      incidunt numquam aliquid est voluptatem iusto doloribus voluptatibus
+      repellendus quibusdam.
+    </p>
+    <small class="text-muted">Posted By Anonymous on 15.03.2022</small>
+  </div>
+  <a class="btn btn-success">Leave a Review</a>
+</div>
+
+<!--
+[routerLink]="['/products/delete-product/', productID]" -->

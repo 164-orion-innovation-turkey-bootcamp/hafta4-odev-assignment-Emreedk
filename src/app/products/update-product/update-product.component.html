@@ -1,0 +1,84 @@
+<h2 class="bg-light mb-2 text-center">Update Product</h2>
+<form class="login-form" [formGroup]="updateProductForm" (submit)="onSubmit()">
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">Product Name</label>
+      <input type="text" class="form-control" [formControlName]="'name'" />
+    </div>
+    <span
+      class="text-danger"
+      *ngIf="
+        updateProductForm.get('name')!.hasError('required') &&
+        updateProductForm.get('name').touched
+      "
+      >name is required
+    </span>
+    <span
+      class="text-danger"
+      *ngIf="
+        updateProductForm.get('name')!.hasError('minlength') &&
+        updateProductForm.get('name').touched
+      "
+      >minimum 5 characters
+    </span>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer02">Category Id</label>
+      <input
+        type="text"
+        class="form-control"
+        [formControlName]="'categoryId'"
+      />
+    </div>
+    <span
+      class="text-danger"
+      *ngIf="
+        updateProductForm.get('categoryId')!.hasError('required') &&
+        updateProductForm.get('categoryId').touched
+      "
+      >category ID is required
+    </span>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Description</label>
+      <textarea
+        type="text"
+        class="form-control"
+        [formControlName]="'description'"
+      >
+      </textarea>
+    </div>
+    <span
+      class="text-danger"
+      *ngIf="
+        updateProductForm.get('description')!.hasError('required') &&
+        updateProductForm.get('description').touched
+      "
+      >description is required
+    </span>
+    <span
+      class="text-danger"
+      *ngIf="
+        updateProductForm.get('description')!.hasError('minlength') &&
+        updateProductForm.get('name').touched
+      "
+      >minimum 15 characters
+    </span>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">Product Price</label>
+      <input type="text" class="form-control" [formControlName]="'price'" />
+    </div>
+    <span
+      class="text-danger"
+      *ngIf="
+        updateProductForm.get('price')!.hasError('required') &&
+        updateProductForm.get('price').touched
+      "
+      >price is required
+    </span>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>

@@ -1,0 +1,23 @@
+<div *ngIf="isUserLoggedIn == true">
+  <h1 class="my4">Category List</h1>
+  <div class="list-group">
+    <button
+      class="list-group-item"
+      routerLink="/products"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      View All Products
+    </button>
+  </div>
+
+  <div class="list-group" *ngFor="let cat of categoryList">
+    <button
+      class="list-group-item"
+      routerLink="/products/category/{{ cat.id }}"
+      routerLinkActive="active"
+    >
+      {{ cat.categoryName }}
+    </button>
+  </div>
+</div>

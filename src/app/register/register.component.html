@@ -1,0 +1,125 @@
+<body class="text-center">
+  <main class="form-signin">
+    <form [formGroup]="registerForm" (submit)="onSubmit()">
+      <h1 class="h3 mb-3 fw-normal">Register</h1>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Name"
+          [formControlName]="'name'"
+        />
+        <label for="floatingInput">Name</label>
+        <span
+          class="text-danger"
+          *ngIf="
+            registerForm.get('name')!.hasError('required') &&
+            registerForm.get('name').touched
+          "
+          >Name is required
+        </span>
+      </div>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Surname"
+          [formControlName]="'surname'"
+        />
+        <label for="floatingInput">Surname</label>
+        <span
+          class="text-danger"
+          *ngIf="
+            registerForm.get('surname')!.hasError('required') &&
+            registerForm.get('surname').touched
+          "
+          >Surname is required
+        </span>
+      </div>
+      <div class="form-floating">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+          [formControlName]="'email'"
+        />
+        <label for="floatingInput">Email address</label>
+        <span
+          class="text-danger"
+          *ngIf="
+            registerForm.get('email')!.hasError('required') &&
+            registerForm.get('email').touched
+          "
+          >Email is required
+        </span>
+        <span
+          class="text-danger"
+          *ngIf="
+            registerForm.get('email')!.hasError('email') &&
+            registerForm.get('email').touched
+          "
+          >Please enter an email address.
+        </span>
+      </div>
+      <div class="form-floating">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+          [formControlName]="'password'"
+        />
+        <label for="floatingPassword">Password</label>
+        <span
+          class="text-danger"
+          *ngIf="
+            registerForm.get('password')!.hasError('required') &&
+            registerForm.get('password').touched
+          "
+          >Password is required
+        </span>
+        <span
+          class="text-danger"
+          *ngIf="
+            registerForm.get('password')!.hasError('pattern') &&
+            registerForm.get('password').touched
+          "
+          >Your password must contain ('a-z' , 'A-Z' , '0-9') and must be a
+          minimum of 6 digits.
+        </span>
+      </div>
+      <div class="form-floating">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="rePassword"
+          [formControlName]="'rePassword'"
+        />
+        <label for="floatingPassword">rePassword</label>
+      </div>
+      <span
+        class="text-danger"
+        *ngIf="
+          registerForm.get('rePassword')!.hasError('required') &&
+          registerForm.get('rePassword').touched
+        "
+        >rePassword is required
+      </span>
+      <span
+        class="text-danger"
+        *ngIf="passwordWarning && registerForm.get('rePassword').touched"
+      >
+        {{ passwordWarning }}
+      </span>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">
+        Register
+      </button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+    </form>
+  </main>
+</body>

@@ -1,0 +1,95 @@
+<h2 class="bg-light mb-2 text-center">Add New Product</h2>
+<form class="login-form" [formGroup]="addProductForm" (submit)="onSubmit()">
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">Product Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Product Name"
+        [formControlName]="'name'"
+      />
+    </div>
+    <span
+      class="text-danger"
+      *ngIf="
+        addProductForm.get('name')!.hasError('required') &&
+        addProductForm.get('name').touched
+      "
+      >name is required
+    </span>
+    <span
+      class="text-danger"
+      *ngIf="
+        addProductForm.get('name')!.hasError('minlength') &&
+        addProductForm.get('name').touched
+      "
+      >minimum 5 characters
+    </span>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer02">Category Id</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Category ID"
+        [formControlName]="'categoryId'"
+      />
+    </div>
+    <span
+      class="text-danger"
+      *ngIf="
+        addProductForm.get('categoryId')!.hasError('required') &&
+        addProductForm.get('categoryId').touched
+      "
+      >category ID is required
+    </span>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Description</label>
+      <textarea
+        type="text"
+        class="form-control"
+        [formControlName]="'description'"
+      >
+      </textarea>
+    </div>
+    <span
+      class="text-danger"
+      *ngIf="
+        addProductForm.get('description')!.hasError('required') &&
+        addProductForm.get('description').touched
+      "
+      >description is required
+    </span>
+    <span
+      class="text-danger"
+      *ngIf="
+        addProductForm.get('description')!.hasError('minlength') &&
+        addProductForm.get('name').touched
+      "
+      >minimum 15 characters
+    </span>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">Product Price</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Product Price"
+        [formControlName]="'price'"
+      />
+    </div>
+    <span
+      class="text-danger"
+      *ngIf="
+        addProductForm.get('price')!.hasError('required') &&
+        addProductForm.get('price').touched
+      "
+      >price is required
+    </span>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>

@@ -1,0 +1,139 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Goodthreads Men's Standard-Fit Short-Sleeve",
+      "categoryId": 2,
+      "description": "Goodthreads' collection of men's clothing crafted with care takes wear-everywhere apparel to the next level. Create can't-miss pairings with long- and short-sleeve",
+      "price": 19.99,
+      "is_available": true,
+      "productImg": "shirt1.jpg"
+    },
+    {
+      "name": "Dickies Men's Long-Sleeve Work Shirt",
+      "categoryId": 2,
+      "description": "CLASSIC WORKWEAR: This relaxed fit button-front work shirt features long sleeves, twin button-flap chest pockets & matching melamine buttons. It's made of a sturdy, machine washable cotton/poly blend of easy care stain release wrinkle-resistant fabric.",
+      "price": 60,
+      "productImg": "shirt2.jpg",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "name": "Casual T-Shirt",
+      "categoryId": 2,
+      "description": "This heavyweight long sleeve tee's colors probably caught your eye. Once you have this sweatshirt in your hands, what you'll really fall in love with is how it feels. Lofty. Sure, it's love at first sight, destined to be a happy long-term relationship.",
+      "price": 20,
+      "productImg": "shirt4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Casual Loose Flowy Swing Shift Dresses",
+      "categoryId": 3,
+      "description": "Pleated loose swing dress with tunic length, solid color, ruffle, simple and plain, tiered dress, can be easily dress up and dress down.",
+      "price": 120,
+      "productImg": "dress.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Baby Set moustache",
+      "categoryId": 5,
+      "description": "description for baby set moustache",
+      "price": 500,
+      "productImg": "babyset.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Baby Set little cute frog",
+      "categoryId": 5,
+      "description": "description for baby set little cute frog",
+      "price": 500,
+      "productImg": "babyset2.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Wicker Papasan Chair",
+      "categoryId": 4,
+      "description": "Create a laid back vibe in your home with our twist on the classic papasan chair design.",
+      "price": 500,
+      "productImg": "chair.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Wood Table",
+      "categoryId": 4,
+      "description": "This side table is easy to slide under the sofa and bed to get a very comfortable posture,and can be used as a sofa table or bedside table in the living room or bedroom",
+      "price": 500,
+      "productImg": "table.jpg"
+    },
+    {
+      "id": 9,
+      "name": "IPhohe 6",
+      "categoryId": 1,
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "price": 500,
+      "productImg": "phone.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Samsung Galaxy s20",
+      "categoryId": 1,
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "price": 500,
+      "productImg": "samsung.jpg"
+    },
+    {
+      "name": "example product",
+      "categoryId": "1",
+      "description": "example product description",
+      "price": 999,
+      "productImg": "noproduct.jpg",
+      "id": 11
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Electronics"
+    },
+    {
+      "id": 2,
+      "categoryName": "Men"
+    },
+    {
+      "id": 3,
+      "categoryName": "Women"
+    },
+    {
+      "id": 4,
+      "categoryName": "Home & Furniture"
+    },
+    {
+      "id": 5,
+      "categoryName": "Baby & Kids"
+    }
+  ],
+  "users": [
+    {
+      "user": {
+        "name": "admin",
+        "surname": "admin",
+        "email": "admin@admin.com",
+        "password": "Admin123",
+        "isAdmin": 1
+      },
+      "id": 1
+    },
+    {
+      "user": {
+        "name": "user",
+        "surname": "user",
+        "email": "user@user.com",
+        "password": "User123",
+        "isAdmin": 0
+      },
+      "id": 2
+    }
+  ],
+  "carts": [],
+  "orders": []
+}
