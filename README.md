@@ -3,7 +3,7 @@
 
 ## You can reach the project description video by clicking on the image below.
 
-[![IMAGE ALT TEXT](src\assets\img\ecommerceproje.jpg)](https://youtu.be/IIznXYwROUg "Angular E-Commerce Web Application")
+[![Alt text]([https://i.hizliresim.com/22btq6v.jpg](https://youtu.be/IIznXYwROUg)
 
 ## Installation
 
