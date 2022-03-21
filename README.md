@@ -1,10 +1,9 @@
 
 # 4. Hafta Ödevi
 
-## You can reach the project description video by clicking on the image below.
+## You can reach the project description video by clicking on the link below.
 
-
-[![Watch the video](src\assets\img\ecommerceproje.jpg)](https://youtu.be/IIznXYwROUg)
+("https://youtu.be/IIznXYwROUg")
 
 
 ## Installation
