@@ -1,13 +1,9 @@
-## You can reach the project description video by clicking on the image below.
-[![Watch the video](src\assets\img\ecommerceproje.jpg)](https://www.youtube.com/watch?v=IIznXYwROUg&ab_channel=EmreDemirkaz%C4%B1k)
-
-
 
 # 4. Hafta Ödevi
 
 ## You can reach the project description video by clicking on the image below.
 
-[![Watch the video](src\assets\img\ecommerceproje.jpg)](https://www.youtube.com/watch?v=IIznXYwROUg&ab_channel=EmreDemirkaz%C4%B1k)
+[![IMAGE ALT TEXT](.src\assets\img\ecommerceproje.jpg)](https://youtu.be/IIznXYwROUg "Angular E-Commerce Web Application")
 
 ## Installation
 
